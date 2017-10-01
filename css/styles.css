@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,800');
+@font-face {
+  font-family: "FontAwesome";
+  src: url(../fonts/FontAwesome.otf);
+}
+@font-face {
+  font-family:"leguegothic" ;
+  src: url(../fonts/leguegothic.otf);
+}
+@font-face {
+  font-family:"Bringin";
+  src: url(../fonts/Bringin.otf;)
+}
+button {
+  width: 253px;
+  height: 60px;
+  font-family: "Open Sans"; 
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: #36aeea;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+button:hover {
+  background-color: #329fd6;
+}
+#callus:hover {
+  color: #329fd6;
+  border-color: #329fd6;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+.journal h2, .scheme h2, .travel-with-us h2, .gallery h2, .lastpage h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 1360px; 
+}
+/*-------------HEADER-------------*/
+header {
+  background-image: url(../images/background.png);
+  background-color: grey;
+  height: 695px;
+  overflow: hidden;
+}
+.linknav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 21px;
+}
+header a {
+  text-decoration: none;
+  color: #9daeb6;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 12px;
+}
+header a:hover {
+  border-bottom: 3px solid #36aeea;
+  padding-bottom: 10px;
+}
+.head {
+  height: 695px;
+  background-image: url(../images/header.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+#callus {
+  width: 153px;
+  height: 46px;
+  background-color: rgba(255,255,255,0);
+  border: 3px solid #36aeea;
+  color: #36aeea;
+  font: 12px "Open Sans";
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-top: -10px;
+  margin-left: 230px;
+}
+.linknav {
+  display: inline-block;
+}
+.bluelogo {
+  font-size: 29px;
+  color: #36aeea;
+  font-family: "Bringin", sans-serif;
+  margin-top: -10px;
+  margin-right: 60px;
+}
+.greylogo {
+  color: #95a5ad;
+}
+.texthead {
+  height: 380px;
+  width: 500px;
+  overflow: hidden;
+  margin-left: 200px;
+}
+.headmain {
+  margin: 150px 0px 0 -680px;
+  display: flex;
+  justify-content: center;
+}
+.headmain h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 4px;
+}
+.headmain h2 {
+  color: #56c7ff;
+  font-family: "Bringin", sans-serif;
+  font-size: 66px;
+  margin-top: -32px;
+}
+.headmain p {
+  color: #c7cccf;
+  font-family: "Open Sans";
+  font-size: 18px;
+  width: 440px;
+  font-weight: 300;
+  margin-top: -10px;
+}
+.headmain button {
+  background-color: #36aeea;
+  color: white;
+  width: 253px;
+  height: 60px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  margin-top: 20px;
+}
+.headmain button:hover {
+  background-color: #329fd6;
+}
+.pictrav {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 550px;
+}
+.phototravel {
+  background-image: url(../images/travelphotoone.png);
+  width: 800px;
+  height: 150px;
+}
+/*----------------BLOG-------------*/
+.blog {
+  background: url(../images/blog.png) no-repeat center top;
+  background-color: #f6f4f4;
+  overflow: hidden;
+  height: 660px;
+  display: flex;
+  justify-content: center;
+}
+.blog h2 {
+  margin-top: 250px;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: rgb(44, 46, 55);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .6px;
+}
+.blog p {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(148, 148, 148);
+  width: 352px;
+  margin-top: 20px;
+  letter-spacing: .2px;
+}
+.blog button {
+  width: 130px;
+  height: 40px;
+  font-size: 12px;
+  margin-top: 31px;
+}
+.blogtext {
+  width: 355px;
+  height: 185px;
+  margin-bottom: 290px;
+  margin-left: 100px;
+}
+#blogg {
+  margin-top: -40px;
+  margin-left: 95px;
+}
+.travelphotoone {
+ background-image: url(../images/travelphotoone.png);
+ width: 800px;
+ height: 570px;
+}
+.travelphototwo {
+  background-image: url(../images/travelphototwo.png);
+  width: 350px;
+  height: 350px;
+  margin-top: -250px;
+  margin-left: -50px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 1.3s;
+  -o-transition: transform 1.3s;
+  transition: transform 1.3s;
+  -webkit-box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.15);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.backphoto{
+  padding: 20px;
+  background-image: url(../images/travelphototwo.png);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 15px;
+  text-shadow: 0.7px 1px 2px rgb(0, 0, 0);  
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+/*------------JOURNAL---------*/
+.journal {
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.journal h2 {
+  margin-top: 110px;
+  margin-bottom: 60px;
+}
+.journal table { 
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-bottom: 90px;
+  width: 900px;
+}
+.texttable {
+  height: 380px;
+  overflow: hidden;
+}
+.journal td {
+  vertical-align: top;
+}
+.headtable {
+  color: #33bef1;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding-top: 45px;
+  text-align: center;
+}
+.journal h3 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16px;
+  padding: 25px 22px 0 22px;
+  letter-spacing: 3px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.journal p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  padding: 20px 30px 0px 30px;
+  text-align: center;
+  text-transform: none;
+}
+.journal em {
+  font-family: "Open Sans";
+  color: black;
+  font-size: 14px;
+}
+.journalpic {
+  width: 380px;
+  height: 380px;
+}
+#pic1 {
+  background-image: url(../images/journalpicone.png);
+}
+#pic2 {
+  background-image: url(../images/journalpictwo.png);
+}
+#pic3 {
+  background-image: url(../images/journalpicthree.png);
+}
+/*--------------OFFER------------*/
+.offer {
+  background-image: url(../images/offer.png);
+  overflow: hidden;
+}
+.offer h2 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 145px;
+}
+.offer p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: rgb(148, 148, 148);
+}
+.data p {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(54, 174, 234);
+  margin-top: 20px;
+  margin-bottom: 247px;
+}
+.data i {
+  padding-right: 5px;
+  font-size: 16px;
+}
+.offer input {
+  outline: none;
+}
+.offer button {
+  width: 225px;
+  height: 56px;
+}
+.ordernow {
+  background-color: white;
+  border-radius: 4px;
+  width: 799px;
+}
+.name {
+  height: 60px;
+  width: 300px;
+  border: none;
+  padding-left: 20px;
+  margin-right: -20px;
+  border-radius: 4px;
+}
+.phone {
+  border: none;
+  border-left: 1px solid #ebebeb;
+  height: 30px;
+  width: 300px;
+  padding-left: 20px;
+  margin-right: -20px;
+}
+/*-------------------SCHEME----------------*/
+.scheme {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  counter-reset: step;
+}
+.scheme h2 {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+.scheme ul {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.scheme li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.scheme li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  border: 2px solid #36aeea;
+  display: block;
+  text-align: center;
+  margin-left: 42%;
+  margin-bottom: 100px;
+  border-radius: 50%;
+  background-color: white;
+  color: #36aeea;
+}
+.scheme li:after {
+  content: "";
+  position: absolute;
+  width: 103%;
+  height: 140px;
+  background-color: white;
+  top: 18px;
+  left: -51%;
+  z-index: -1;
+  border-style: dashed;
+  border-color: #DDD;
+  border-width: 2px;
+  border-bottom: none;
+}
+.scheme li:first-child:after {
+  content: none;
+}
+.scheme li, .scheme h3 {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.scheme li, .scheme p {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #b4b4b4;
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-bottom: 120px;
+}
+.scheme canvas:active{ 
+  animation: sc .2s linear 1;  
+}
+@keyframes sc {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.05, 1.05);}
+}
+/*--------------TRAVEL WITH US--------------*/
+.travel-with-us {
+  background: url(../images/travelmain.png) left bottom repeat-x;
+  height: 970px;
+  overflow: hidden;
+}
+.travel-with-us h2 {
+  margin-bottom: 60px;
+}
+.backgroundsection {
+  background: url(../images/travelcontent.png) no-repeat center top;
+  height: 700px;
+}
+.travelpick {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  cursor: pointer;
+}
+.travelimage {
+  width: 200px;
+  height: 382px;
+  margin: 0px 0 50px 25px;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+}
+.travelll {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 1.3s;
+  -o-transition: transform 1.3s;
+  transition: transform 1.3s;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  -webkit-box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.15);
+}
+.travelfont{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../images/pyrenees.png);
+}
+.travelback {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-image: url(../images/pyrenees.png);
+  overflow: hidden;
+}
+.travelback p {
+  padding-top: 50%;
+}
+.travelback button {
+  margin-bottom: 15px;
+  width: 100px;
+  height: 30px;
+  font-size: 10px;
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.stars {
+  color: white;
+  float: left;
+  padding: 10px;
+}
+.traveltext {
+  color: white;
+  text-align: left;
+  font-family: "Open Sans";
+  padding-left: 10px;
+}
+.traveltext a {
+  color: white;
+}
+.traveltext a:hover {
+  text-decoration: none;
+}
+.price {
+  color: white;
+  margin-bottom: 15px;
+  vertical-align: bottom;
+}
+.price .oldprice {
+  float: left;
+  text-decoration: line-through;
+  margin-left: 12px;
+}
+.price .newprice {
+  float: right;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-right: 12px;
+}
+.alps {
+  background-image: url(../images/alps.png);
+}
+.pyrenees {
+ background-image: url(../images/pyrenees.png);
+}
+.rocky {
+  background-image: url(../images/rocky.png);
+}
+.kavkaz {
+  background-image: url(../images/kavkaz.png);
+}
+/*--------------GALLERY------------*/
+.gallery {
+  margin: auto;
+}
+.gallery h2 {
+  margin: 100px 0 65px 0;
+}
+.gallery img {
+  vertical-align: top;
+  padding: 10px;
+  margin-right: 10px;
+}
+.columntwo {
+  margin-bottom: 70px;
+}
+#picfive {
+  margin-top: -100px;
+}
+/*------------------LOGOS---------------*/
+.logos {
+  background-color: rgb(248, 249, 250);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logos li {
+  width: 93px;
+  height: 55px;
+  background: url(../images/sprites.png) no-repeat;
+  display: inline-block;
+  list-style-type: none;
+  margin: 70px 65px 70px 19px;
+  cursor: pointer;
+}
+#logotwo {
+  background-position: -210px 0px;
+}
+#logothree {
+  background-position: -426px 0px;
+}
+#logofour {
+  background-position: -637px 0px;
+}
+#logofive {
+  background-position: -851px 0px;
+}
+#logosix {
+  background-position: -1060px 0px;
+}
+/*---------------LASTPAGE-----------------*/
+.lastpage {
+ background-image: url(../images/lastpageone.png);
+ 
+}
+.ourclients {
+  display: flex;
+ justify-content: center;
+ flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+.lastpage h2 {
+  margin: 100px 0  80px 0;
+}
+.lastpagetext {
+ font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(173, 173, 173);
+  width: 560px;
+  margin: 0 40px 130px 40px;
+}
+.yaroslav {
+  background: url(../images/avatar.png) no-repeat;
+  background-position: -30px -13px;
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+.avatext {
+  padding-top: 25px;
+  padding-left: 90px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: rgb(54, 174, 234);
+}
+.john {
+  background: url(../images/avatar.png) no-repeat;
+  background-position: -102px -13px;
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+.datatwo  {
+  text-align: center;
+  height: 500px;
+  width: 514px;
+  background: rgba(255,255,255, .6);
+  background: linear-gradient(to top, #38707d, #bac0c9);
+  border-radius: 10px; 
+  margin: 0 auto 165px auto;
+}
+.datatwo p {
+  margin: 0;
+  padding: 0;
+}
+.datatwo ul {
+  margin-top: 35px;
+  margin-right: 17px;
+}
+.datatwo li {
+  list-style-type: none;
+}
+.datatwo input {
+  width: 456px;
+  height: 62px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+.datatwo h3 {
+  font-size: 36px;
+  font-family: "Open Sans";
+  color: rgb(54, 174, 234);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 30px;
+}
+.datatwo p {
+  color: #383e4a;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: lighter;
+}
+.datatwo button {
+  height: 72px;
+  width: 456px;
+  background: linear-gradient(to top, lightgreen, #36aeea);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+}
+.datatwo button .seconddone {
+  display: none;
+}
+@keyframes buttonclick {
+  0% { background-position: top}
+  100% { background-position: bottom }
+}
+.datatwo button p {
+  color: white;
+}
+/*-------------FOOTER----------*/
+footer {
+  background-color: #3e5f6a;
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgba(255, 255, 255, .7);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.numberr {
+  font-family: "Roboto";
+  font-size: 23px;
+  text-align: right;
+}
+footer ul {
+  margin-left: -70px;
+}
+footer li {
+  display: inline-block;
+  list-style-type: none;
+}
+.twitter {
+  background-image: url(../images/spritesfooter.png);
+  width: 39px;
+  height: 39px;
+  background-position: -8px -8px;
+}
+.facebook {
+  background-image: url(../images/spritesfooter.png);
+  width: 39px;
+  height: 39px;
+  background-position: -52px -8px;
+}
+.vk {
+  background-image: url(../images/spritesfooter.png);
+  width: 39px;
+  height: 39px;
+  background-position: -97px -8px;
+}
