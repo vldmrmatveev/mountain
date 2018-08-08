@@ -1,11 +1,33 @@
 $(document).ready(function() {
 
-	$("#navbar a").click(function(event) { 
+	$("header a, .hidemenu a").click(function(event) { 
 		event.preventDefault();    //отмена стаднартной обработки нажатия по ссылке
 		var id = $(this).attr("href"),  //забираем индефикатор блока с атрибутом href
 		top = $(id).offset().top;   //узнаем высоту от начала страницы до блока
 		$("body,html").animate({scrollTop: top}, 1500);
 	});
+
+	$('.logo-content a').click(function(e){
+		e.preventDefault();
+	});
+
+	$('.mobile-button').click(function(){
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$('html').css('overflow', 'auto').css('height', 'initial');
+			$('.hidemenu').animate({top: -2000}, 800);	
+		} else {
+			$('.hidemenu').animate({top: 0}, 300);
+			$(this).addClass('active');
+			$('html').css('overflow', 'hidden').css('height', '100%');
+		}
+	});
+
+	$('.hidemenu a').click(function(){
+		$('.hidemenu').animate({top: -2000}, 800);
+		$('.mobile-button').removeClass('active');
+		$('html').css('overflow', 'auto').css('height', 'initial');
+	})
 
 	$("#sendcontact").click(function(event){
 	var notEmptyFields = $("#datatwosubmit input").filter(function(){
