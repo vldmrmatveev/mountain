@@ -10,6 +10,9 @@ $(document).ready(function() {
 	$('.logo-content a').click(function(e){
 		e.preventDefault();
 	});
+	
+	var date = new Date();
+	$('.date').text(date.getFullYear());
 
 	$('.mobile-button').click(function(){
 		if ($(this).hasClass('active')) {
